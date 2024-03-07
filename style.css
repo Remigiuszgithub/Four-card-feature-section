@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200,400,600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 98%);
+}
+.info {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.info h1 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 400;
+    line-height: 1.3;
+}
+.info span {
+    font-weight: 600;
+}
+.info p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    margin-top: 20px;
+}
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.box {
+    background-color: white;
+    width: 25vw;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.box h2, .box p {
+    margin: 30px;
+}
+.icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+.icon img {
+    padding: 25px;
+}
+.box h2 {
+    padding-top: 30px;
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.box p {
+    color: hsl(229, 6%, 66%);
+    font-weight: 200;
+    width: 80%;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+.left {
+    margin-right: 20px;
+}
+.right {
+    margin-left: 20px;
+}
+.super {
+    border-top: 5px solid hsl(180, 62%, 55%);
+}
+.build {
+    border-top: 5px solid hsl(0, 78%, 62%);
+}
+.karma {
+    border-top: 5px solid hsl(34, 97%, 64%);
+}
+.calc {
+    border-top: 5px solid hsl(212, 86%, 64%);
+}
+@media (max-width: 768px){
+    body{
+        height: auto;
+        overflow-x: hidden;
+    }
+    .bottom{
+        flex-direction: column;
+    }
+    .box {
+        width: 90%;
+    }
+    .left, .center, .right {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .info {
+        width: 90%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+}
